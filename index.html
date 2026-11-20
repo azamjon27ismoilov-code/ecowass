@@ -1,0 +1,751 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>EcoWast — Mahalliy chiqindilarni yig'ish va olib ketish</title>
+<meta name="description" content="EcoWast — Namangan viloyatida uy, ofis va ta'mirlash chiqindilarini yig'ish va olib ketish xizmati. Narx va vaqt oldindan kelishiladi." />
+<meta name="theme-color" content="#19a05d" />
+<meta property="og:title" content="EcoWast — Mahalliy chiqindilarni yig'ish va olib ketish" />
+<meta property="og:description" content="Namangan viloyatida uy, ofis va ta'mirlash chiqindilarini olib ketish. Narx va xizmat vaqti oldindan kelishiladi." />
+<meta property="og:type" content="website" />
+<meta property="og:image" content="https://images.unsplash.com/photo-1532996122724-e3c354a0b15b?auto=format&fit=crop&w=1200&q=80" />
+<meta property="og:locale" content="uz_UZ" />
+<link rel="canonical" href="https://ecowast.uz/" />
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%2319a05d'/%3E%3Ctext x='32' y='44' font-size='36' font-family='Arial' font-weight='700' fill='white' text-anchor='middle'%3EE%3C/text%3E%3C/svg%3E" />
+<!-- DIQQAT: +998991234567 namunaviy raqam. Butun faylda (HTML, JSON-LD, JS) haqiqiy raqamga almashtiring. -->
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"LocalBusiness","name":"EcoWast","url":"https://ecowast.uz/","telephone":"+998991234567","description":"Namangan viloyatida uy, ofis va ta'mirlash chiqindilarini olib ketish xizmati","areaServed":"Namangan viloyati","address":{"@type":"PostalAddress","addressLocality":"Namangan","addressRegion":"Namangan viloyati","addressCountry":"UZ"},"openingHours":"Mo-Su 08:00-21:00","sameAs":["https://t.me/AX_540"]}
+</script>
+<style>
+:root{--text:#0e1d15;--muted:#586d60;--primary:#19a05d;--primary-dark:#0b7c46;--primary-soft:#dff7e7;--shadow:0 24px 70px rgba(15,91,60,.12);--card:rgba(255,255,255,.8);--line:1px solid rgba(14,29,21,.08)}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:90px}
+body{margin:0;font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;background:radial-gradient(circle at top left,rgba(25,160,93,.12),transparent 26%),linear-gradient(180deg,#f8fbf8,#eef8f0);color:var(--text)}
+a{color:inherit;text-decoration:none}
+button,input,textarea,select{font:inherit}
+.container{width:min(1220px,calc(100% - 32px));margin:0 auto}
+:focus-visible{outline:3px solid rgba(25,160,93,.55);outline-offset:2px}
+
+.topbar{background:linear-gradient(90deg,#122b1c,#123928 35%,#0d5b38);color:rgba(255,255,255,.88)}
+.topbar-inner{display:flex;align-items:center;justify-content:space-between;gap:18px;min-height:42px;font-size:.85rem}
+.topbar-badge{display:inline-flex;align-items:center;gap:8px;padding:.35rem .8rem;border-radius:999px;background:rgba(255,255,255,.08)}
+.topbar-badge::before{content:"";width:7px;height:7px;border-radius:50%;background:#7ff0ae;box-shadow:0 0 12px rgba(127,240,174,.9)}
+
+.site-header{position:sticky;top:0;z-index:1000;background:rgba(248,251,248,.88);backdrop-filter:blur(18px);border-bottom:1px solid rgba(14,29,21,.06)}
+.nav{display:flex;align-items:center;justify-content:space-between;min-height:80px;gap:16px}
+.brand{display:inline-flex;align-items:center;gap:12px;font-weight:900;letter-spacing:.04em}
+.brand-mark{width:38px;height:38px;border-radius:12px;display:grid;place-items:center;color:#fff;background:linear-gradient(135deg,var(--primary),#58c77e);box-shadow:0 12px 28px rgba(25,160,93,.25)}
+.brand-mark::before{content:"E"}
+.nav-links{display:flex;align-items:center;gap:28px;color:var(--muted)}
+.nav-links a:hover{color:var(--text)}
+.nav-actions{display:flex;align-items:center;gap:12px}
+.burger{display:none;width:44px;height:44px;border:var(--line);border-radius:12px;background:#fff;cursor:pointer;font-size:1.4rem}
+.mobile-menu{display:none;border-top:1px solid rgba(14,29,21,.06);padding:8px 16px 16px}
+.mobile-menu.is-open{display:grid}
+.mobile-menu a{padding:12px 4px;font-weight:700;border-bottom:1px solid rgba(14,29,21,.06)}
+
+.btn{display:inline-flex;align-items:center;justify-content:center;border-radius:999px;padding:.9rem 1.5rem;font-weight:800;border:1px solid transparent;cursor:pointer;transition:transform .18s}
+.btn:hover{transform:translateY(-1px)}
+.btn-primary{background:linear-gradient(135deg,var(--primary),var(--primary-dark));color:#fff;box-shadow:0 20px 38px rgba(25,160,93,.22)}
+.btn-secondary{background:rgba(255,255,255,.8);color:var(--text);border-color:rgba(14,29,21,.08)}
+
+.contact-action-overlay{position:fixed;inset:0;background:rgba(16,28,20,.45);opacity:0;pointer-events:none;transition:opacity .2s;z-index:1200}
+.contact-action-overlay.is-visible{opacity:1;pointer-events:auto}
+.contact-action{position:fixed;left:50%;bottom:28px;transform:translateX(-50%) translateY(18px);width:min(420px,calc(100% - 24px));padding:22px 20px 18px;border-radius:24px;background:rgba(255,255,255,.97);border:var(--line);box-shadow:0 28px 64px rgba(15,91,60,.16);opacity:0;visibility:hidden;transition:opacity .2s,transform .2s;z-index:1300}
+.contact-action.is-visible{opacity:1;visibility:visible;transform:translateX(-50%)}
+.contact-action-header{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-bottom:18px}
+.contact-action-header h3{margin:0;font-size:1.2rem}
+.contact-action-close{width:34px;height:34px;border:0;border-radius:50%;background:rgba(14,29,21,.06);cursor:pointer;font-size:1.3rem}
+.contact-action-buttons{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+
+section{padding:52px 0}
+.section-heading{max-width:650px;margin-bottom:28px}
+.kicker{color:var(--primary-dark);font-size:.8rem;font-weight:800;letter-spacing:.11em;text-transform:uppercase}
+h2{margin:12px 0;font-size:clamp(2rem,3vw,3.1rem);letter-spacing:-.05em;line-height:1.08}
+.section-heading p{margin:0;color:var(--muted);line-height:1.75}
+
+.hero{padding:68px 0 28px}
+.hero-inner{display:grid;grid-template-columns:1.08fr .92fr;align-items:center;gap:42px}
+.eyebrow{display:inline-flex;align-items:center;gap:8px;background:var(--primary-soft);color:var(--primary-dark);border:1px solid rgba(25,160,93,.12);border-radius:999px;padding:.52rem .8rem;font-size:.76rem;letter-spacing:.09em;text-transform:uppercase;font-weight:900}
+h1{margin:20px 0 18px;font-size:clamp(2.6rem,5vw,5rem);line-height:.98;letter-spacing:-.06em}
+.headline-gradient{background:linear-gradient(90deg,var(--primary),#71d08d 40%,#f0c75b);-webkit-background-clip:text;background-clip:text;color:transparent}
+.lead{max-width:620px;margin:0 0 28px;color:var(--muted);font-size:1.08rem;line-height:1.75}
+.cta-row{display:flex;flex-wrap:wrap;gap:12px;margin-bottom:30px}
+.hero-meta{display:flex;flex-wrap:wrap;gap:24px;color:var(--muted)}
+.hero-meta strong{display:block;color:var(--text);font-size:1.35rem;margin-bottom:4px}
+.hero-panel{padding:20px;background:linear-gradient(180deg,rgba(255,255,255,.82),rgba(241,248,243,.8));border:var(--line);border-radius:30px;box-shadow:var(--shadow)}
+.panel-title{margin:0 0 16px;font-weight:800}
+
+.feature-list{display:grid;gap:12px;padding:0;margin:0;list-style:none}
+.feature-list li{display:flex;align-items:center;gap:12px;background:rgba(25,160,93,.04);border:1px solid rgba(25,160,93,.08);border-radius:16px;padding:12px 14px;color:var(--muted)}
+.feature-list li::before{content:"✓";flex:none;color:var(--primary-dark);font-weight:900;width:24px;height:24px;border-radius:50%;background:rgba(25,160,93,.1);display:grid;place-items:center}
+
+.quick-order{padding-top:20px}
+.quick-order-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:22px;align-items:start}
+.quick-order-card{background:linear-gradient(180deg,rgba(255,255,255,.9),rgba(236,247,239,.92));border:var(--line);border-radius:30px;padding:clamp(20px,3vw,32px);box-shadow:0 24px 52px rgba(15,91,60,.08)}
+.order-options{display:inline-flex;gap:10px;padding:6px;border-radius:999px;background:rgba(25,160,93,.06);border:1px solid rgba(25,160,93,.08);margin-bottom:20px}
+.order-option{border:0;background:transparent;color:var(--muted);border-radius:999px;padding:.7rem 1rem;font-weight:800;cursor:pointer}
+.order-option.is-active{background:linear-gradient(135deg,var(--primary),var(--primary-dark));color:#fff}
+.mini-form{display:grid;gap:14px}
+.field-row{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.field{display:grid;gap:7px}
+.field label{font-weight:700}
+.field input,.field textarea,.field select{width:100%;border:var(--line);border-radius:14px;background:rgba(255,255,255,.92);padding:.9rem 1rem;color:var(--text)}
+.field input:focus,.field textarea:focus,.field select:focus{outline:none;border-color:rgba(25,160,93,.45);box-shadow:0 0 0 3px rgba(25,160,93,.12)}
+.field textarea{min-height:110px;resize:vertical}
+.form-note{margin:0;font-size:.88rem;color:var(--muted);line-height:1.6}
+.form-status{margin:0;min-height:1.4em;font-weight:700;color:var(--primary-dark)}
+.order-actions{display:flex;flex-wrap:wrap;gap:12px}
+
+.cards-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.service-card,.contact-box,.step{background:var(--card);border:var(--line);border-radius:26px;padding:24px}
+.service-card{display:flex;flex-direction:column}
+.service-icon{width:60px;height:60px;border-radius:18px;display:grid;place-items:center;font-size:1.5rem;background:linear-gradient(135deg,rgba(25,160,93,.14),rgba(243,183,73,.15));margin-bottom:18px}
+.service-card h3{margin:0 0 10px;font-size:1.38rem}
+.service-card p,.step p{margin:0;color:var(--muted);line-height:1.7}
+.service-card p{flex:1;margin-bottom:18px}
+.services-note{margin:22px 0 0;color:var(--muted)}
+
+.check-list{display:grid;gap:12px}
+.check-item{display:flex;align-items:flex-start;gap:14px;background:rgba(25,160,93,.04);border:1px solid rgba(25,160,93,.06);border-radius:16px;padding:14px 16px}
+.check-item span{color:var(--muted)}
+.bullet{flex:none;width:28px;height:28px;border-radius:50%;background:rgba(25,160,93,.12);color:var(--primary-dark);display:grid;place-items:center;font-weight:900}
+
+.process-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:22px}
+.step-no{width:42px;height:42px;border-radius:12px;background:linear-gradient(135deg,var(--primary),#78cb90);color:#fff;display:grid;place-items:center;font-weight:800;margin-bottom:12px}
+.step h3{margin:0 0 8px;font-size:1.2rem}
+
+.faq-list{display:grid;gap:12px}
+.faq-item{background:var(--card);border:var(--line);border-radius:18px;overflow:hidden}
+.faq-item summary{list-style:none;cursor:pointer;padding:18px 20px;font-weight:800;display:flex;align-items:center;justify-content:space-between;gap:12px}
+.faq-item summary::-webkit-details-marker{display:none}
+.faq-item summary::after{content:"+";font-size:1.4rem;color:var(--primary-dark)}
+.faq-item[open] summary::after{content:"−"}
+.faq-item p{margin:0;padding:0 20px 18px;color:var(--muted);line-height:1.7}
+
+.contact-box{max-width:640px}
+.contact-box h3{margin:0;font-size:1.7rem}
+.contact-list{display:grid;gap:14px;margin:18px 0 22px}
+.contact-item{display:flex;align-items:center;gap:12px;padding:12px 14px;border-radius:16px;background:rgba(25,160,93,.04);border:1px solid rgba(25,160,93,.08)}
+.contact-item span,.contact-item a{color:var(--muted)}
+.icon-bubble{flex:none;width:42px;height:42px;border-radius:12px;background:linear-gradient(135deg,rgba(25,160,93,.12),rgba(243,183,73,.15));display:grid;place-items:center;font-size:1.1rem}
+
+.site-footer{padding:28px 0 48px;color:var(--muted)}
+.footer-inner{display:flex;align-items:center;justify-content:space-between;gap:18px;flex-wrap:wrap;padding-top:18px;border-top:1px solid rgba(14,29,21,.06)}
+.footer-links{display:flex;gap:18px;flex-wrap:wrap}
+
+.fixed-contact-rail{position:fixed;right:18px;bottom:22px;display:flex;flex-direction:column;gap:10px;z-index:1100}
+.floating-action{width:56px;height:56px;border-radius:18px;display:grid;place-items:center;font-size:1.5rem;color:#fff;box-shadow:0 18px 30px rgba(15,91,60,.18);animation:float 2.4s ease-in-out infinite}
+.floating-action.whatsapp{background:linear-gradient(135deg,#25d366,#1cb95b)}
+.floating-action.telegram{background:linear-gradient(135deg,#2ea5ff,#0b77d7);animation-delay:.25s}
+@keyframes float{50%{transform:translateY(-6px)}}
+[hidden]{display:none!important}
+.hp{position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden}
+.calc-card{max-width:760px;background:var(--card);border:var(--line);border-radius:26px;padding:24px;display:grid;gap:16px}
+.calc-result{margin:0;font-size:1.6rem;font-weight:800;letter-spacing:-.03em;color:var(--primary-dark)}
+.calc-card .btn{justify-self:start}
+.gallery-grid,.review-grid{display:grid;gap:22px}
+.gallery-grid{grid-template-columns:repeat(2,1fr)}
+.review-grid{grid-template-columns:repeat(3,1fr)}
+.gallery-item{margin:0;background:var(--card);border:var(--line);border-radius:26px;padding:14px;display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.gallery-item figcaption{grid-column:1/-1;color:var(--muted);padding:4px 6px}
+.gallery-photo{position:relative}
+.gallery-photo img{display:block;width:100%;height:auto;aspect-ratio:4/3;object-fit:cover;border-radius:16px}
+.gallery-photo span{position:absolute;left:10px;top:10px;padding:.3rem .65rem;border-radius:999px;background:rgba(14,29,21,.72);color:#fff;font-size:.75rem;font-weight:800}
+.review-card{background:var(--card);border:var(--line);border-radius:26px;padding:24px}
+.review-card p{margin:0 0 14px;color:var(--muted);line-height:1.7}
+.stars{color:#f0b742;letter-spacing:2px;margin-bottom:10px}
+.areas-grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:26px;align-items:start}
+.chips{display:flex;flex-wrap:wrap;gap:10px;align-content:flex-start}
+.chip{border:var(--line);background:rgba(255,255,255,.85);border-radius:999px;padding:.6rem 1rem;font-weight:700;cursor:pointer}
+.chip:hover{border-color:rgba(25,160,93,.4);background:var(--primary-soft)}
+.map-wrap{border:var(--line);border-radius:26px;overflow:hidden;box-shadow:var(--shadow);background:#fff}
+.map-wrap iframe{display:block;width:100%;height:380px;border:0}
+.map-link{display:inline-block;margin-top:12px;color:var(--primary-dark);font-weight:700}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;scroll-behavior:auto!important;transition:none!important}}
+
+@media (max-width:940px){
+.hero-inner,.cards-grid,.quick-order-grid,.areas-grid,.gallery-grid,.review-grid{grid-template-columns:1fr}
+.process-grid{grid-template-columns:1fr 1fr}
+.nav-links{display:none}
+.burger{display:inline-grid;place-items:center}
+}
+@media (max-width:620px){
+.topbar-inner{justify-content:center}
+.topbar-inner a{display:none}
+.nav-actions .btn-secondary{display:none}
+.nav-actions .btn-primary{padding:.7rem 1rem}
+.cta-row{flex-direction:column;align-items:stretch}.cta-row .btn{width:100%}
+.field-row,.process-grid{grid-template-columns:1fr}
+.footer-inner{flex-direction:column;align-items:flex-start}
+.fixed-contact-rail{right:12px;bottom:18px}
+.floating-action{width:52px;height:52px}
+}
+</style>
+</head>
+<body>
+<div class="topbar">
+  <div class="container topbar-inner">
+    <div class="topbar-badge">Har kuni: 08:00 — 21:00</div>
+    <a href="tel:+998991234567" class="contact-trigger" data-track="phone_click">+998 99 123 45 67</a>
+  </div>
+</div>
+
+<header class="site-header">
+  <div class="container nav">
+    <a href="#" class="brand" aria-label="EcoWast bosh sahifa"><span class="brand-mark" aria-hidden="true"></span><span>ECO<span style="color:var(--primary)">WAST</span></span></a>
+    <nav class="nav-links" aria-label="Asosiy navigatsiya">
+      <a href="#services">Xizmatlar</a><a href="#areas">Hududlar</a><a href="#process">Jarayon</a><a href="#faq">Savollar</a><a href="#contact">Aloqa</a>
+    </nav>
+    <div class="nav-actions">
+      <a href="#contact" class="btn btn-secondary">Bog'lanish</a>
+      <a href="#quick-order" class="btn btn-primary">Buyurtma berish</a>
+      <button id="burger" class="burger" type="button" aria-label="Menyuni ochish" aria-expanded="false" aria-controls="mobileMenu">☰</button>
+    </div>
+  </div>
+  <nav id="mobileMenu" class="mobile-menu" aria-label="Mobil navigatsiya">
+    <a href="#services">Xizmatlar</a><a href="#areas">Hududlar</a><a href="#process">Jarayon</a><a href="#faq">Savollar</a><a href="#contact">Aloqa</a>
+  </nav>
+</header>
+
+<main>
+  <section class="hero">
+    <div class="container hero-inner">
+      <div>
+        <div class="eyebrow">Mahalliy chiqindilarni yig'ish</div>
+        <h1>Toza muhit, qulay <span class="headline-gradient">xizmat</span><br />va ishonchli hamkor.</h1>
+        <p class="lead">Uy, ofis va ta'mirlash chiqindilarini olib ketish bo'yicha buyurtma qoldiring. Hudud, kelish vaqti va narx buyurtma tafsilotlariga qarab oldindan kelishiladi.</p>
+        <div class="cta-row">
+          <a href="#quick-order" class="btn btn-primary" data-track="cta_order">Buyurtma qoldirish</a>
+          <a href="#services" class="btn btn-secondary">Batafsil</a>
+        </div>
+        <div class="hero-meta">
+          <div><strong>Uy</strong>Maishiy chiqindilar</div>
+          <div><strong>Ofis</strong>Tijorat chiqindilari</div>
+          <div><strong>Ta'mirlash</strong>Qurilish chiqindilari</div>
+        </div>
+      </div>
+      <div class="hero-panel">
+        <p class="panel-title">Buyurtma oldidan kelishiladi</p>
+        <ul class="feature-list">
+          <li>Chiqindi turi va taxminiy hajmi</li>
+          <li>Xizmat ko'rsatiladigan manzil</li>
+          <li>Narx va olib ketish vaqti</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="quick-order" id="quick-order">
+    <div class="container quick-order-grid">
+      <div class="quick-order-card">
+        <div class="section-heading">
+          <div class="kicker">Buyurtma qoldirish</div>
+          <h2 id="orderTitle">WhatsApp yoki Telegram orqali tezkor buyurtma.</h2>
+          <p id="orderLead">Ismingiz, telefon raqamingiz va xizmat turini kiriting. Tayyor xabar WhatsApp'da ochiladi yoki Telegram uchun nusxalanadi.</p>
+        </div>
+        <div class="order-options" role="group" aria-label="Buyurtma kanalini tanlash">
+          <button class="order-option is-active" type="button" data-channel="whatsapp" aria-pressed="true">WhatsApp</button>
+          <button class="order-option" type="button" data-channel="telegram" aria-pressed="false">Telegram</button>
+        </div>
+        <form id="quickOrderForm" class="mini-form" novalidate>
+          <div class="field-row">
+            <div class="field"><label for="quickName">Ismingiz</label><input id="quickName" name="name" type="text" autocomplete="name" placeholder="Ismingizni kiriting" required /></div>
+            <div class="field"><label for="quickPhone">Telefon</label><input id="quickPhone" name="phone" type="tel" autocomplete="tel" placeholder="+998 xx xxx xx xx" required /></div>
+          </div>
+          <div class="field-row">
+            <div class="field">
+              <label for="quickService">Xizmat turi</label>
+              <select id="quickService" name="service">
+                <option>Uy uchun</option><option>Ofis uchun</option><option>Ta'mirlash chiqindilari</option><option>Maxsus loyiha</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="quickDistrict">Hudud</label>
+              <select id="quickDistrict" name="district"><option value="">Hududni tanlang</option></select>
+            </div>
+          </div>
+          <div class="field">
+            <label for="quickMessage">Manzil yoki izoh</label>
+            <textarea id="quickMessage" name="message" placeholder="Masalan: Yunusobod tumani, 14-kvartal, plastik va qog'oz chiqindisi"></textarea>
+          </div>
+          <div class="hp" aria-hidden="true"><label>Veb-sayt<input type="text" id="quickWebsite" name="website" tabindex="-1" autocomplete="off" /></label></div>
+          <p id="calcNote" class="form-note" hidden></p>
+          <p id="orderNote" class="form-note">Buyurtma messenjerda <strong>«Yuborish»</strong> tugmasini bosganingizdan keyingina bizga yetib boradi. Oyna ochilmasa, ma'lumotlaringiz formada saqlanib qoladi.</p>
+          <div class="order-actions">
+            <button type="submit" id="orderSubmit" class="btn btn-primary">Xabarni tayyorlash</button>
+          </div>
+          <p id="quickStatus" class="form-status" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+      <div>
+        <div class="section-heading">
+          <div class="kicker">Nega biz</div>
+          <h2>Mahalliy mijoz uchun ishonchli xizmat.</h2>
+        </div>
+        <div class="check-list">
+          <div class="check-item"><div class="bullet">✓</div><div><strong>Tezkor javob</strong><br /><span>Buyurtmalar har kuni 08:00–21:00 oralig'ida ko'rib chiqiladi.</span></div></div>
+          <div class="check-item"><div class="bullet">✓</div><div><strong>Mahalliy xizmat</strong><br /><span>Hududga yaqinmiz, shuning uchun vaqt va yo'l xarajati tejaladi.</span></div></div>
+          <div class="check-item"><div class="bullet">✓</div><div><strong>Xavfsizlik</strong><br /><span>Chiqindilar to'g'ri ajratiladi, joy toza qoldiriladi.</span></div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="services">
+    <div class="container">
+      <div class="section-heading">
+        <div class="kicker">Xizmatlar</div>
+        <h2>Har bir chiqindi uchun qulay yechim.</h2>
+        <p>Maishiy, tijorat va ta'mirlash chiqindilarini to'g'ri, tez va xavfsiz olib ketamiz.</p>
+      </div>
+      <div class="cards-grid">
+        <article class="service-card"><div class="service-icon">🏠</div><h3>Uy chiqindilari</h3><p>Uylar va turar-joylardagi maishiy chiqindilarni muntazam va tezkor yig'ib olamiz.</p><button type="button" class="btn btn-secondary service-select" data-service="Uy uchun">Buyurtma berish</button></article>
+        <article class="service-card"><div class="service-icon">🏢</div><h3>Ofis va korxonalar</h3><p>Ofis, biznes markazi va tashkilotlardan qog'oz, plastmassa va umumiy chiqindilarni o'z vaqtida olib ketamiz.</p><button type="button" class="btn btn-secondary service-select" data-service="Ofis uchun">Buyurtma berish</button></article>
+        <article class="service-card"><div class="service-icon">🧱</div><h3>Ta'mirlash chiqindilari</h3><p>Ta'mirdan qolgan yog'och, metall, qoplama va boshqa materiallarni xavfsiz yig'ib, olib ketamiz.</p><button type="button" class="btn btn-secondary service-select" data-service="Ta'mirlash chiqindilari">Buyurtma berish</button></article>
+      </div>
+      <p class="services-note">Narx hajm va chiqindi turiga qarab oldindan kelishiladi.</p>
+    </div>
+  </section>
+
+  <section id="calculator" hidden>
+    <div class="container">
+      <div class="section-heading">
+        <div class="kicker">Narx hisoblash</div>
+        <h2>Taxminiy narxni bilib oling.</h2>
+        <p>Hajmni kiriting. Bu taxminiy narx, aniq narx manzil va chiqindi turiga qarab tasdiqlanadi.</p>
+      </div>
+      <div class="calc-card">
+        <div class="field-row">
+          <div class="field"><label for="calcService">Xizmat turi</label><select id="calcService"></select></div>
+          <div class="field"><label for="calcVolume" id="calcVolumeLabel">Hajm</label><input id="calcVolume" type="number" min="1" max="100" step="1" value="1" inputmode="decimal" /></div>
+        </div>
+        <p id="calcResult" class="calc-result" aria-live="polite"></p>
+        <button type="button" id="calcApply" class="btn btn-primary">Shu hisob bilan buyurtma berish</button>
+      </div>
+    </div>
+  </section>
+
+  <section id="gallery" hidden>
+    <div class="container">
+      <div class="section-heading">
+        <div class="kicker">Ishlarimiz</div>
+        <h2>Oldin va keyin.</h2>
+      </div>
+      <div id="galleryGrid" class="gallery-grid"></div>
+    </div>
+  </section>
+
+  <section id="process">
+    <div class="container">
+      <div class="section-heading">
+        <div class="kicker">Jarayon</div>
+        <h2>Buyurtma berishning oddiy jarayoni.</h2>
+      </div>
+      <div class="process-grid">
+        <div class="step"><div class="step-no">1</div><h3>So'rov qoldiring</h3><p>Telefon yoki messenjer orqali chiqindi turi va manzilni bildiring.</p></div>
+        <div class="step"><div class="step-no">2</div><h3>Baholaymiz</h3><p>Hajm va turga qarab narxni aniqlab, sizga xabar beramiz.</p></div>
+        <div class="step"><div class="step-no">3</div><h3>Yig'ib olamiz</h3><p>Chiqindilarni xavfsiz tarzda olib chiqib, joyni tozalab qo'yamiz.</p></div>
+        <div class="step"><div class="step-no">4</div><h3>Tasdiqlaymiz</h3><p>Ish tugagach, natijani siz bilan birga tekshirib, to'lovni rasmiylashtiramiz.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="areas">
+    <div class="container">
+      <div class="section-heading">
+        <div class="kicker">Hududlar</div>
+        <h2>Namangan viloyati bo'ylab xizmat.</h2>
+        <p>Hududingizni tanlang, buyurtma formasi shu hudud bilan ochiladi. Aniq narx va vaqt manzilga qarab kelishiladi.</p>
+      </div>
+      <div class="areas-grid">
+        <div id="districtChips" class="chips"></div>
+        <div>
+          <div class="map-wrap"><iframe title="Namangan viloyati xaritasi" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.openstreetmap.org/export/embed.html?bbox=70.9%2C40.7%2C72.2%2C41.4&amp;layer=mapnik&amp;marker=41.0011%2C71.6726"></iframe></div>
+          <a class="map-link" href="https://www.openstreetmap.org/?mlat=41.0011&amp;mlon=71.6726#map=9/41.0/71.6" target="_blank" rel="noopener">Katta xaritada ochish</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="reviews" hidden>
+    <div class="container">
+      <div class="section-heading">
+        <div class="kicker">Sharhlar</div>
+        <h2>Mijozlarimiz fikri.</h2>
+      </div>
+      <div id="reviewGrid" class="review-grid"></div>
+    </div>
+  </section>
+
+  <section id="faq">
+    <div class="container">
+      <div class="section-heading">
+        <div class="kicker">FAQ</div>
+        <h2>Ko'p so'raladigan savollar.</h2>
+      </div>
+      <div class="faq-list">
+        <details class="faq-item" open><summary>Buyurtma qoldirish uchun nimalar kerak?</summary><p>Telefon raqami, xizmat turi va manzil yoki izoh yetarli. Buyurtmani Telegram yoki WhatsApp orqali berish mumkin.</p></details>
+        <details class="faq-item"><summary>Narx qanday belgilanadi?</summary><p>Narx chiqindi turi, hajmi va manzilga qarab belgilanadi. Ish boshlanishidan oldin siz bilan kelishib olinadi.</p></details>
+        <details class="faq-item"><summary>Qachon javob olaman?</summary><p>Buyurtmalar har kuni 08:00–21:00 oralig'ida ko'rib chiqiladi. Xizmat vaqti buyurtma tafsilotlari va mavjud imkoniyatga qarab kelishiladi.</p></details>
+        <details class="faq-item"><summary>Xizmat hududi cheklanganmi?</summary><p>Biz mahalliy hududlarda xizmat ko'rsatamiz. Masofa uzoq bo'lsa, narx va shartlar alohida kelishiladi.</p></details>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="container">
+      <div class="section-heading">
+        <div class="kicker">Aloqa</div>
+        <h2>Bugun buyurtma qoldiring.</h2>
+      </div>
+      <div class="contact-box">
+        <h3>Biz bilan bog'laning</h3>
+        <div class="contact-list">
+          <div class="contact-item"><div class="icon-bubble">📞</div><div><strong>Telefon</strong><br /><a href="tel:+998991234567" class="contact-trigger" data-track="phone_click">+998 99 123 45 67</a></div></div>
+          <div class="contact-item"><div class="icon-bubble">📍</div><div><strong>Xizmat hududi</strong><br /><span>Namangan viloyati. Aniq hudud manzil bo'yicha kelishiladi.</span></div></div>
+          <div class="contact-item"><div class="icon-bubble">⏰</div><div><strong>Ish vaqti</strong><br /><span>Har kuni: 08:00 — 21:00</span></div></div>
+        </div>
+        <div class="cta-row" style="margin:0">
+          <a href="#quick-order" class="btn btn-primary">Buyurtma berish</a>
+          <a href="https://t.me/AX_540" class="btn btn-secondary" target="_blank" rel="noopener">Telegramga o'tish</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <div class="brand"><span class="brand-mark" aria-hidden="true"></span><span>ECO<span style="color:var(--primary)">WAST</span></span></div>
+    <div class="footer-links"><a href="#services">Xizmatlar</a><a href="#areas">Hududlar</a><a href="#process">Jarayon</a><a href="#faq">Savollar</a><a href="#contact">Aloqa</a></div>
+    <div>© <span id="year"></span> EcoWast</div>
+  </div>
+</footer>
+
+<div id="contactActionOverlay" class="contact-action-overlay" aria-hidden="true"></div>
+<div id="contactAction" class="contact-action" role="dialog" aria-modal="true" aria-labelledby="contactActionTitle" aria-hidden="true">
+  <div class="contact-action-header">
+    <h3 id="contactActionTitle">Bog'lanish usulini tanlang</h3>
+    <button id="contactActionClose" class="contact-action-close" type="button" aria-label="Yopish">×</button>
+  </div>
+  <div class="contact-action-buttons">
+    <a href="tel:+998991234567" class="btn btn-primary">📞 Telefon</a>
+    <a href="https://t.me/AX_540" class="btn btn-secondary" target="_blank" rel="noopener">💬 Telegram</a>
+  </div>
+</div>
+
+<div class="fixed-contact-rail" aria-label="Tezkor aloqa">
+  <a class="floating-action whatsapp" data-track="whatsapp_click" href="https://wa.me/998991234567?text=Salom%2C%20EcoWast%20buyurtma%20bermoqchiman." target="_blank" rel="noopener" aria-label="WhatsApp orqali bog'lanish">💬</a>
+  <a class="floating-action telegram" data-track="telegram_click" href="https://t.me/AX_540" target="_blank" rel="noopener" aria-label="Telegram orqali bog'lanish">✈</a>
+</div>
+
+<script>
+(function () {
+  /* ===== SOZLAMALAR: faqat shu blokni tahrirlang ===== */
+  var CONFIG = {
+    PHONE: "998991234567",                 /* haqiqiy raqamga almashtiring (+ belgisiz) */
+    TG: "https://t.me/AX_540",
+    ORDER_ENDPOINT: "",                    /* Cloudflare Worker manzili (README.md ga qarang). Bo'sh bo'lsa, buyurtma messenjer orqali ketadi */
+    YANDEX_METRIKA_ID: "",                 /* masalan: 12345678 */
+    GA_ID: "",                             /* masalan: G-XXXXXXXXXX */
+    /* Narxlar. null bo'lsa, kalkulyator ko'rinmaydi. Kalitlar forma ro'yxatidagi xizmat nomlari bilan bir xil bo'lsin:
+       PRICES: { unit: "m³", min: 0, items: { "Uy uchun": 0, "Ofis uchun": 0, "Ta'mirlash chiqindilari": 0 } }, */
+    PRICES: null,
+    /* Oldin/keyin rasmlari. Bo'sh bo'lsa, bo'lim ko'rinmaydi:
+       { before: "images/1-oldin.webp", after: "images/1-keyin.webp", caption: "Chust, ta'mirdan keyingi hovli" } */
+    GALLERY: [],
+    /* Faqat haqiqiy mijoz sharhlari. Bo'sh bo'lsa, bo'lim ko'rinmaydi:
+       { name: "Ism", place: "Chortoq", text: "Sharh matni", rating: 5 } */
+    REVIEWS: [],
+    DISTRICTS: ["Namangan shahri", "Mingbuloq", "Kosonsoy", "Namangan tumani", "Norin", "Pop", "To'raqo'rg'on", "Uychi", "Uchqo'rg'on", "Chortoq", "Chust", "Yangiqo'rg'on"]
+  };
+  /* ===== SOZLAMALAR TUGADI ===== */
+
+  var $ = function (s, r) { return (r || document).querySelector(s); };
+  $("#year").textContent = new Date().getFullYear();
+
+  /* ---------- Statistika ---------- */
+  if (CONFIG.YANDEX_METRIKA_ID) {
+    (function (m, e, t, r, i, k, a) {
+      m[i] = m[i] || function () { (m[i].a = m[i].a || []).push(arguments); };
+      m[i].l = 1 * new Date();
+      k = e.createElement(t); a = e.getElementsByTagName(t)[0]; k.async = 1; k.src = r; a.parentNode.insertBefore(k, a);
+    })(window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+    window.ym(CONFIG.YANDEX_METRIKA_ID, "init", { clickmap: true, trackLinks: true, accurateTrackBounce: true });
+  }
+  if (CONFIG.GA_ID) {
+    var ga = document.createElement("script");
+    ga.async = true; ga.src = "https://www.googletagmanager.com/gtag/js?id=" + encodeURIComponent(CONFIG.GA_ID);
+    document.head.appendChild(ga);
+    window.dataLayer = window.dataLayer || [];
+    window.gtag = function () { window.dataLayer.push(arguments); };
+    window.gtag("js", new Date()); window.gtag("config", CONFIG.GA_ID);
+  }
+  function track(goal) {
+    try {
+      if (CONFIG.YANDEX_METRIKA_ID && window.ym) window.ym(CONFIG.YANDEX_METRIKA_ID, "reachGoal", goal);
+      if (CONFIG.GA_ID && window.gtag) window.gtag("event", goal);
+    } catch (err) { /* statistika xatosi sahifani buzmasin */ }
+  }
+  document.addEventListener("click", function (e) {
+    var t = e.target.closest && e.target.closest("[data-track]");
+    if (t) track(t.dataset.track);
+  });
+
+  /* ---------- Mobil menyu ---------- */
+  var burger = $("#burger"), menu = $("#mobileMenu");
+  function setMenu(open) {
+    menu.classList.toggle("is-open", open);
+    burger.setAttribute("aria-expanded", open);
+    burger.textContent = open ? "✕" : "☰";
+    burger.setAttribute("aria-label", open ? "Menyuni yopish" : "Menyuni ochish");
+  }
+  burger.addEventListener("click", function () { setMenu(!menu.classList.contains("is-open")); });
+  menu.addEventListener("click", function (e) { if (e.target.tagName === "A") setMenu(false); });
+
+  /* ---------- Modal: faqat sichqonchali qurilmalarda ---------- */
+  var overlay = $("#contactActionOverlay"), modal = $("#contactAction"), lastFocus = null;
+  var canHover = window.matchMedia("(hover: hover) and (pointer: fine)").matches;
+  function focusables() { return modal.querySelectorAll("a[href],button"); }
+  function openModal() {
+    lastFocus = document.activeElement;
+    modal.classList.add("is-visible"); overlay.classList.add("is-visible");
+    modal.setAttribute("aria-hidden", "false"); overlay.setAttribute("aria-hidden", "false");
+    focusables()[0].focus();
+  }
+  function closeModal() {
+    modal.classList.remove("is-visible"); overlay.classList.remove("is-visible");
+    modal.setAttribute("aria-hidden", "true"); overlay.setAttribute("aria-hidden", "true");
+    if (lastFocus) lastFocus.focus();
+  }
+  document.querySelectorAll(".contact-trigger").forEach(function (t) {
+    t.addEventListener("click", function (e) {
+      if (!canHover) return;
+      e.preventDefault(); openModal();
+    });
+  });
+  overlay.addEventListener("click", closeModal);
+  $("#contactActionClose").addEventListener("click", closeModal);
+  document.addEventListener("keydown", function (e) {
+    if (!modal.classList.contains("is-visible")) return;
+    if (e.key === "Escape") { closeModal(); return; }
+    if (e.key === "Tab") {
+      var f = focusables(), first = f[0], last = f[f.length - 1];
+      if (e.shiftKey && document.activeElement === first) { e.preventDefault(); last.focus(); }
+      else if (!e.shiftKey && document.activeElement === last) { e.preventDefault(); first.focus(); }
+    }
+  });
+
+  /* ---------- Hududlar ---------- */
+  var districtSel = $("#quickDistrict"), chips = $("#districtChips");
+  function goToOrder() {
+    $("#quick-order").scrollIntoView({ behavior: "smooth", block: "start" });
+    setTimeout(function () { $("#quickName").focus({ preventScroll: true }); }, 500);
+  }
+  CONFIG.DISTRICTS.forEach(function (name) {
+    var o = document.createElement("option"); o.textContent = name; districtSel.appendChild(o);
+    var c = document.createElement("button");
+    c.type = "button"; c.className = "chip"; c.textContent = name;
+    c.addEventListener("click", function () { districtSel.value = name; track("district_select"); goToOrder(); });
+    chips.appendChild(c);
+  });
+
+  /* ---------- Oldin/keyin rasmlari ---------- */
+  (function () {
+    var items = CONFIG.GALLERY;
+    if (!items.length) return;
+    var grid = $("#galleryGrid");
+    items.forEach(function (item) {
+      var fig = document.createElement("figure"); fig.className = "gallery-item";
+      ["before", "after"].forEach(function (k) {
+        if (!item[k]) return;
+        var wrap = document.createElement("div"); wrap.className = "gallery-photo";
+        var img = document.createElement("img");
+        img.src = item[k]; img.loading = "lazy"; img.decoding = "async"; img.width = 600; img.height = 450;
+        img.alt = (item.caption || "Ish natijasi") + (k === "before" ? " (oldin)" : " (keyin)");
+        var tag = document.createElement("span"); tag.textContent = k === "before" ? "Oldin" : "Keyin";
+        wrap.appendChild(img); wrap.appendChild(tag); fig.appendChild(wrap);
+      });
+      if (item.caption) { var cap = document.createElement("figcaption"); cap.textContent = item.caption; fig.appendChild(cap); }
+      grid.appendChild(fig);
+    });
+    $("#gallery").hidden = false;
+  })();
+
+  /* ---------- Sharhlar ---------- */
+  (function () {
+    var items = CONFIG.REVIEWS;
+    if (!items.length) return;
+    var grid = $("#reviewGrid");
+    items.forEach(function (item) {
+      var card = document.createElement("article"); card.className = "review-card";
+      var rating = Math.min(5, Math.max(0, item.rating | 0));
+      if (rating) {
+        var st = document.createElement("div"); st.className = "stars";
+        st.setAttribute("aria-label", "Baho: " + rating + " / 5");
+        st.textContent = new Array(rating + 1).join("★"); card.appendChild(st);
+      }
+      var p = document.createElement("p"); p.textContent = item.text; card.appendChild(p);
+      var who = document.createElement("strong"); who.textContent = item.name + (item.place ? ", " + item.place : ""); card.appendChild(who);
+      grid.appendChild(card);
+    });
+    $("#reviews").hidden = false;
+  })();
+
+  /* ---------- Narx kalkulyatori ---------- */
+  var calcNote = "";
+  function setCalcNote(text) {
+    calcNote = text;
+    var el = $("#calcNote");
+    el.textContent = text ? "Hisoblangan: " + text : "";
+    el.hidden = !text;
+  }
+  function fmt(n) { return String(n).replace(/\B(?=(\d{3})+(?!\d))/g, " "); }
+  (function () {
+    var P = CONFIG.PRICES;
+    if (!P || !P.items) return;
+    var names = Object.keys(P.items).filter(function (n) { return P.items[n] > 0; });
+    if (!names.length) return;
+    var sel = $("#calcService"), vol = $("#calcVolume"), out = $("#calcResult");
+    names.forEach(function (n) { var o = document.createElement("option"); o.textContent = n; sel.appendChild(o); });
+    $("#calcVolumeLabel").textContent = "Hajm (" + (P.unit || "m³") + ")";
+    function calc() {
+      var v = parseFloat(vol.value);
+      if (!(v > 0)) { out.textContent = "Hajmni kiriting."; return null; }
+      var total = Math.max(P.min || 0, Math.round(v * P.items[sel.value]));
+      out.textContent = "Taxminiy narx: " + fmt(total) + " so'm";
+      return { v: v, total: total };
+    }
+    sel.addEventListener("change", calc); vol.addEventListener("input", calc);
+    $("#calcApply").addEventListener("click", function () {
+      var r = calc();
+      if (!r) return;
+      $("#quickService").value = sel.value;
+      setCalcNote(sel.value + ", " + r.v + " " + (P.unit || "m³") + ", taxminan " + fmt(r.total) + " so'm");
+      track("calc_apply"); goToOrder();
+    });
+    calc();
+    $("#calculator").hidden = false;
+  })();
+
+  /* ---------- Xizmat kartasidan buyurtmaga o'tish ---------- */
+  document.querySelectorAll(".service-select").forEach(function (b) {
+    b.addEventListener("click", function () { $("#quickService").value = b.dataset.service; goToOrder(); });
+  });
+
+  /* ---------- Kanal tanlash (messenjer rejimi) ---------- */
+  var options = document.querySelectorAll(".order-option");
+  function activeChannel() { var a = $(".order-option.is-active"); return a ? a.dataset.channel : "whatsapp"; }
+  function setChannel(btn) {
+    options.forEach(function (o) { o.classList.remove("is-active"); o.setAttribute("aria-pressed", "false"); });
+    btn.classList.add("is-active"); btn.setAttribute("aria-pressed", "true");
+  }
+  options.forEach(function (o) { o.addEventListener("click", function () { setChannel(o); }); });
+
+  var viaServer = !!CONFIG.ORDER_ENDPOINT;
+  function applyMode() {
+    $(".order-options").hidden = viaServer;
+    $("#orderSubmit").textContent = viaServer ? "Buyurtmani yuborish" : "Xabarni tayyorlash";
+    $("#orderTitle").textContent = viaServer ? "Tezkor buyurtma." : "WhatsApp yoki Telegram orqali tezkor buyurtma.";
+    $("#orderLead").textContent = viaServer
+      ? "Ismingiz, telefon raqamingiz va xizmat turini kiriting. Buyurtmani qabul qilgach, siz bilan bog'lanamiz."
+      : "Ismingiz, telefon raqamingiz va xizmat turini kiriting. Tayyor xabar WhatsApp'da ochiladi yoki Telegram uchun nusxalanadi.";
+    $("#orderNote").innerHTML = viaServer
+      ? "Buyurtma yuborilgach, ish vaqtida (08:00–21:00) siz bilan bog'lanamiz."
+      : "Buyurtma messenjerda <strong>«Yuborish»</strong> tugmasini bosganingizdan keyingina bizga yetib boradi. Oyna ochilmasa, ma'lumotlaringiz formada saqlanib qoladi.";
+  }
+  applyMode();
+
+  /* ---------- Xabar yig'ish va yuborish ---------- */
+  function copyText(text) {
+    if (navigator.clipboard && navigator.clipboard.writeText) {
+      return navigator.clipboard.writeText(text).then(function () { return true; }, function () { return false; });
+    }
+    return Promise.resolve(false);
+  }
+  function openExternal(url, statusEl) {
+    var popup = window.open(url, "_blank");
+    if (!popup) {
+      statusEl.textContent = "Brauzer yangi oynani blokladi. Popup uchun ruxsat berib, qayta urinib ko'ring. Ma'lumotlaringiz formada saqlangan.";
+      return false;
+    }
+    popup.opener = null;
+    return true;
+  }
+  function sendMessenger(channel, text, statusEl) {
+    if (channel === "telegram") {
+      var copied = copyText(text);
+      if (!openExternal(CONFIG.TG, statusEl)) return;
+      copied.then(function (ok) {
+        statusEl.textContent = ok
+          ? "Telegram ochildi va xabar nusxalandi. Chatga qo'yib (Paste), «Yuborish»ni bosing."
+          : "Telegram ochildi, ammo xabarni nusxalab bo'lmadi. Ma'lumotlaringizni formadan olib, Telegramga o'zingiz yozing.";
+      });
+    } else if (openExternal("https://wa.me/" + CONFIG.PHONE + "?text=" + encodeURIComponent(text), statusEl)) {
+      statusEl.textContent = "WhatsApp ochildi. Xabarni tekshirib, «Yuborish»ni bosing.";
+    }
+  }
+  function validate(nameEl, phoneEl, statusEl) {
+    var digits = phoneEl.value.replace(/\D/g, "");
+    if (!nameEl.value.trim()) { statusEl.textContent = "Iltimos, ismingizni kiriting."; nameEl.focus(); return false; }
+    if (digits.length !== 9 && !(digits.length === 12 && digits.indexOf("998") === 0)) {
+      statusEl.textContent = "Telefon raqamini +998 XX XXX XX XX yoki XX XXX XX XX formatida kiriting.";
+      phoneEl.focus();
+      return false;
+    }
+    return true;
+  }
+  function collect() {
+    return {
+      name: $("#quickName").value.trim(),
+      phone: $("#quickPhone").value.trim(),
+      service: $("#quickService").value,
+      district: $("#quickDistrict").value,
+      note: $("#quickMessage").value.trim(),
+      estimate: calcNote,
+      page: location.href
+    };
+  }
+  function toText(d) {
+    return [
+      "Salom, EcoWast!",
+      "Ismim: " + d.name,
+      "Telefon: " + d.phone,
+      "Xizmat: " + d.service,
+      d.district ? "Hudud: " + d.district : "",
+      d.estimate ? "Hisob: " + d.estimate : "",
+      "Izoh: " + (d.note || "yo'q"),
+      "Iltimos, buyurtmani tasdiqlang."
+    ].filter(Boolean).join("\n");
+  }
+
+  var quick = $("#quickOrderForm"), qStatus = $("#quickStatus"), submitBtn = $("#orderSubmit");
+  quick.addEventListener("submit", function (e) {
+    e.preventDefault();
+    qStatus.textContent = "";
+    if ($("#quickWebsite").value) return; /* spam tuzog'i */
+    if (!validate($("#quickName"), $("#quickPhone"), qStatus)) return;
+    var d = collect();
+    track("order_submit");
+    if (!viaServer) { sendMessenger(activeChannel(), toText(d), qStatus); return; }
+    submitBtn.disabled = true;
+    qStatus.textContent = "Yuborilmoqda...";
+    fetch(CONFIG.ORDER_ENDPOINT, { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify(d) })
+      .then(function (r) {
+        if (!r.ok) throw new Error("server xatosi");
+        qStatus.textContent = "Buyurtmangiz qabul qilindi. Tez orada siz bilan bog'lanamiz.";
+        track("order_sent");
+        quick.reset(); setCalcNote("");
+      })
+      .catch(function () {
+        viaServer = false; applyMode();
+        qStatus.textContent = "Buyurtma serverga yetmadi. Kanalni tanlab, «Xabarni tayyorlash»ni bosing yoki telefon orqali bog'laning. Ma'lumotlaringiz formada saqlangan.";
+      })
+      .then(function () { submitBtn.disabled = false; });
+  });
+})();
+</script>
+</body>
+</html>
